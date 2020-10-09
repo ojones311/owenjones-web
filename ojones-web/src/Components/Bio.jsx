@@ -6,20 +6,22 @@ const Bio = () => {
     const fade = useSpring({opacity:1, from: {opacity:0}})
     return(
         <div className='about-page'>
-            <animated.div style={fade}>
-            <div className='bio-container'> 
-                <p id='bio'>
-                    I'm residing in Bushwick {'=>'} Brooklyn,NY. When I'm not building web apps I love to snowboard, play soccer, solve puzzles, and cook. 
-                 </p>
-                 <p id='bio'> 
-                     I'm building user-friendly experiences and exploring different technologies along the way. Different frameworks and libraries like React, Node, and PostgreSQL. 
-                </p>  
+            <div className='myphoto'>
+                <img id='profile-pic' src='./pics/portfolio_pic.jpg' alt='Profile'></img>
             </div>
-            </animated.div>
+                <animated.div style={fade}>
+                <div className='bio-container'> 
+                    <p id='bio'>
+                        I'm a Brooklyn based full stack web developer. When I'm not building web apps I love to snowboard, play soccer, solve puzzles, and cook. 
+                    </p>
+                    <p id='bio'> 
+                        I'm building user-friendly experiences and exploring different technologies along the way. Different frameworks and libraries like React, Node, and PostgreSQL. 
+                    </p>  
+                </div>
+                </animated.div> 
         </div>
     )
 }
-
 
 
 

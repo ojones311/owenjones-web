@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Navigation from './Components/Navigation.jsx'
 import Bio from './Components/Bio.jsx'
+import Projects from './Components/Projects.jsx'
 import './App.css';
 
 class App extends Component {
@@ -15,10 +16,10 @@ class App extends Component {
       <div className='App'>
         <Navigation />
         <div className='tagline'>
-          <h1> Hi, I'm Owen Jones and I'm a full-stack software developer </h1>
+          <h1> Hi, I'm Owen Jones. </h1>
         </div>
           <Bio />
-          <img id='profile-pic' src='./pics/portfolio_pic.jpg' alt='Profile' ></img>
+          <Projects />
       </div>
     )
   }
