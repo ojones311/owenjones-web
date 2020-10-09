@@ -1,5 +1,7 @@
 .about-page {
     display: grid;
+    margin: 0 auto;
+    width: 80%;
     grid-template-columns: 1fr 1.5fr;
     padding: 10px;
 }
