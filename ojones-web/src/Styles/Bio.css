@@ -4,9 +4,9 @@
     width: 80%;
     grid-template-columns: 1fr 1.5fr;
     padding: 10px;
+    grid-gap: 5px;
 }
 .myphoto {
-    /* justify-content: right; */
     text-align: right
 }
 

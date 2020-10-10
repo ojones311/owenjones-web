@@ -1,4 +1,5 @@
 import React from 'react'
+import Skills from '../Components/Skills.jsx'
 import {useSpring, animated} from 'react-spring'
 import '../Styles/Bio.css'
 
@@ -16,7 +17,8 @@ const Bio = () => {
                     </p>
                     <p id='bio'> 
                         I'm building user-friendly experiences and exploring different technologies along the way. Different frameworks and libraries like React, Node, and PostgreSQL. 
-                    </p>  
+                    </p>
+                    <Skills />  
                 </div>
                 </animated.div> 
         </div>
