@@ -18,6 +18,7 @@ const Bio = () => {
                     <p id='bio'> 
                         I'm building user-friendly experiences and exploring different technologies along the way. Different frameworks and libraries like React, Node, and PostgreSQL. 
                     </p>
+                    <h3 id='skills-heading'>Languages and Frameworks</h3>
                     <Skills />  
                 </div>
                 </animated.div> 
