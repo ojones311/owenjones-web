@@ -4,6 +4,7 @@
 }
 
 #proj-title {
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -13,4 +14,20 @@
     display: grid;
     padding: 10px;
     grid-template-columns: 1fr 1fr;
+}
+
+#card {
+    margin: 0 auto;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+}
+
+#link-buttons {
+    text-align: center;
+}
+
+#mission0 #mission1 #mission2 {
+    letter-spacing: 10px;
 }

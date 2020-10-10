@@ -6,7 +6,8 @@
     padding: 10px;
 }
 .myphoto {
-    margin: 0 auto;
+    /* justify-content: right; */
+    text-align: right
 }
 
 .bio-container {
