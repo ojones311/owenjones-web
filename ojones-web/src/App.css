@@ -15,3 +15,7 @@ button {
   border-radius: 20px;
 }
 
+.border-div {
+  border: 1px #f3f3f4;
+  border-style: solid;
+}

@@ -19,7 +19,7 @@ const Bio = () => {
                         I'm building user-friendly experiences and exploring different technologies along the way. Different frameworks and libraries like React, Node, and PostgreSQL. 
                     </p>
                     <div className='resume'>
-                        <a target= 'blank' href='https://docs.google.com/document/d/        1Dm0UPHdxjRFAPbNWVOdtsnjxpHXK58VigH6fRZtaQoU/edit#heading=h.85r1lcob89ni'>My Resume</a>
+                        <a target= 'blank' href='https://docs.google.com/document/d/        1Dm0UPHdxjRFAPbNWVOdtsnjxpHXK58VigH6fRZtaQoU/edit#heading=h.85r1lcob89ni'> Click to go to my Resume</a>
                     </div>
                     <h3 id='skills-heading'>Languages and Frameworks</h3>
                     <Skills />  

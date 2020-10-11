@@ -19,6 +19,8 @@ class App extends Component {
           <h1> Hi, I'm Owen Jones. </h1>
         </div>
           <Bio />
+          <div className='border-div'> 
+          </div>
           <Projects />
       </div>
     )
