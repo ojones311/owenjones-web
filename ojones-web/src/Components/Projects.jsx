@@ -31,6 +31,14 @@ class Projects extends Component {
                     mission: 'MemeMe is a social media site where users can post their favorite memes. Users can add friends and see the memes their friends post as well.',
                     github: 'https://github.com/ojones311/MemeMe',
                     live:''
+                },
+                {   
+                    id: 3,
+                    name: 'Twitter-Clone',
+                    description: 'A HTML and CSS Twitter Clone. Built with HTML and CSS.',
+                    mission: ' A simple Twitter clone of their landing page.',
+                    github: 'https://github.com/ojones311/Pursuit-Core-Web-Twitter-CSS-Assignment',
+                    live:''
                 }
             ]
         }

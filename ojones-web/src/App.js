@@ -20,9 +20,6 @@ class App extends Component {
         </div>
           <Bio />
           <Projects />
-          <div>
-            
-          </div>
       </div>
     )
   }
