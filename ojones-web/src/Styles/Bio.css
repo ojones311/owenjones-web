@@ -8,9 +8,9 @@
 }
 .skill-list{
     display: grid;
-    padding: 20px;
+    padding: 10px;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .myphoto {
@@ -29,9 +29,8 @@
 }
 
 #bio {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
-    letter-spacing: 1px;
 }
 
 #skills-heading {
@@ -41,12 +40,17 @@
 #icon {
     width: 50px;
 }
-
+.devicon {
+    width: 3em;
+    /* text-align: center; */
+}
 .resume {
     text-align: center;
+    padding: 10px;
 }
 
 #js-icon, #html-icon, #css-icon, #nodejs-icon, 
 #postgres-icon, #react-icon, #github-icon, #git-icon {
     margin: 0 auto;
+    text-align: center;
 }

@@ -11,11 +11,18 @@
 
 
 button {
-  background-color: #9FD2D6;
   border-radius: 20px;
 }
 
+button:hover {
+  background-color: #1da1f2;
+  color: white;
+}
 .border-div {
   border: 1px #f3f3f4;
   border-style: solid;
+}
+
+p {
+  font-size: 14px;
 }

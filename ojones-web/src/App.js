@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import Navigation from './Components/Navigation.jsx'
 import Bio from './Components/Bio.jsx'
 import Projects from './Components/Projects.jsx'
+import ContactForm from './Components/ContactForm.jsx'
 import './App.css';
 
 class App extends Component {
@@ -14,7 +15,6 @@ class App extends Component {
   render(){
     return(
       <div className='App'>
-        <Navigation />
         <div className='tagline'>
           <h1> Hi, I'm Owen Jones. </h1>
         </div>
@@ -22,6 +22,8 @@ class App extends Component {
           <div className='border-div'> 
           </div>
           <Projects />
+          <ContactForm />
+          <Navigation />
       </div>
     )
   }

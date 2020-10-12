@@ -1,5 +1,6 @@
 .social-buttons {
     margin: 0 auto; 
+    margin-top: 50px;
     width: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -7,4 +8,8 @@
 }
 #contact {
     width: 25px;
+}
+
+#first-sc, #second-sc, #third-sc, #fourth-sc {
+    margin: 0 auto
 }
