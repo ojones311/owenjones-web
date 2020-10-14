@@ -1,4 +1,27 @@
 .contact-form {
-   text-align: center;
-   padding: 10px;
+    text-align:center;
+    margin: 0 auto;
+    width: 50%
+}
+
+form {
+    display: grid;
+    padding: 10px;
+    margin: 0 auto;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#form-email {
+    margin: 0 auto;
+    grid-row: 1/2
+}
+
+#form-message {
+    margin: auto;
+    grid-row: 2/3
+}
+
+#submit {
+    margin: 0 auto;
+    width: 8em;
 }

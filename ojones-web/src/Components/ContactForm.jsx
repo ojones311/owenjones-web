@@ -44,20 +44,24 @@ class ContactForm extends Component {
         return(
             <div className='contact-form'>
                 <h4>Contact Me</h4>
-                <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="email">Email:</label>
-                    <input id="email" type="email" size='150px'name="email" required />
-                    <br></br>
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-                    <br></br>
-                    <button type="submit" disabled={this.state.submitting}>
-                        Submit
-                    </button>
-                    {this.state.status && (
-                        <p className='form-msg'>{this.state.status.msg}</p>
-                    )}
-                </form>
+                <div className='form'>
+                    <form onSubmit={this.handleSubmit}>
+                        <div id='form-email'>
+                            <label htmlFor="email">Email:</label>
+                            <input id="email" type="email" size='150px'name="email" required />
+                        </div> 
+                        <div id='form-message'>
+                            <label htmlFor="message">Message:</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <button id='submit'type="submit" disabled={this.state.submitting}>
+                            Submit
+                        </button>
+                        {this.state.status && (
+                            <p className='form-msg'>{this.state.status.msg}</p>
+                        )}
+                    </form>
+                </div>
             </div>
         )
     }
