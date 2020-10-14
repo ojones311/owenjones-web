@@ -22,6 +22,7 @@ class ContactForm extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
+        console.log('form submitted')
         const form = event.target
         this.setState({
             submitting: true
@@ -35,7 +36,7 @@ class ContactForm extends Component {
             this.handleServerResponse(true, 'Thanks !', form)
         })
         .catch(r => {
-            this.handleServerRepsonse(false, r.response.data.error, form)
+            this.handleServerResponse(false, r.response.data.error, form)
         })
     }
 
@@ -43,16 +44,19 @@ class ContactForm extends Component {
         return(
             <div className='contact-form'>
                 <h4>Contact Me</h4>
-                <form onSubmit={this.handleOnSubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <label htmlFor="email">Email:</label>
                     <input id="email" type="email" size='150px'name="email" required />
                     <br></br>
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message"></textarea>
                     <br></br>
-                    <button type="submit" >
+                    <button type="submit" disabled={this.state.submitting}>
                         Submit
                     </button>
+                    {this.state.status && (
+                        <p className='form-msg'>{this.state.status.msg}</p>
+                    )}
                 </form>
             </div>
         )
