@@ -22,7 +22,7 @@ class Projects extends Component {
                     description:'A Full-StackWeb Application built with React and Nodejs. Using the Spotify Search API I can search albums and their metadata that I then cache in my PostgreSQL database. I use  React to display results and Nodejs to make requests to the Spotify API and my own backend',
                     mission:'Mytunes is a full-stack application in which users can post, comment on, and discuss albums that they are listening to.',
                     github:'https://github.com/ojones311/mytunes',
-                    live:''
+                    live:'https://mytunesoj.netlify.app/'
                 },
                 {   
                     id: 2,
