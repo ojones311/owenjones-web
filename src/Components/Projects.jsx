@@ -30,7 +30,7 @@ class Projects extends Component {
                     description: 'A Full-Stack Web Application built with React and Nodejs. Using React JS for the frontend and Express JS for the backend. A RESTful API that uses a PostgreSql for database management.' ,
                     mission: 'MemeMe is a social media site where users can post their favorite memes. Users can add friends and see the memes their friends post as well.',
                     github: 'https://github.com/ojones311/MemeMe',
-                    live:'https://aqueous-sierra-27538.herokuapp.com/'
+                    live:'https://meme-me-ny.herokuapp.com/'
                 },
                 {   
                     id: 3,
