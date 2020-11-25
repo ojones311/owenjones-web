@@ -9,6 +9,18 @@ class ProjectDashboard extends Component {
         }
     }
 
+    openProjectDash = () => {
+        this.setState({
+            modalState: true
+        })
+    }
+
+    closeProjectDash = () => {
+        this.setState({
+            modalState: false
+        })
+    }
+    
     render(){
         const {modalState} = this.state
         return(
