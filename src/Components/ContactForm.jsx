@@ -47,11 +47,11 @@ class ContactForm extends Component {
                 <div className='form'>
                     <form onSubmit={this.handleSubmit}>
                         <div id='form-email'>
-                            <label htmlFor="email">Email:</label>
+                            <label htmlFor="email">Email : </label>
                             <input id="email" type="email" size='150px'name="email" required />
                         </div> 
                         <div id='form-message'>
-                            <label htmlFor="message">Message:</label>
+                            <label htmlFor="message">Message : </label>
                             <textarea id="message" name="message"></textarea>
                         </div>
                         <button id='submit'type="submit" disabled={this.state.submitting}>

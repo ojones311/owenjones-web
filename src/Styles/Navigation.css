@@ -1,11 +1,31 @@
 .social-buttons {
     margin: 0 auto; 
-    margin-top: 5px;
+    margin-top: 15px;
     width: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
+#first-sc:hover {
+    background-color: lightgray;
+    transform: scale(1.08)
+}
+
+#second-sc:hover {
+    background-color: lightgray;
+    transform: scale(1.08)
+}
+
+#third-sc:hover {
+    background-color: lightgray;
+    transform: scale(1.08)
+}
+
+#fourth-sc:hover {
+    background-color: lightgray;
+    transform: scale(1.08)
+}
+
 #contact {
     width: 25px;
 }
