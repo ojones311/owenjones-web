@@ -1,31 +1,29 @@
 import React,{Component} from 'react'
-
+import Modal from '../Components/Modal'
 
 class ProjectDashboard extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             modalState : false
         }
     }
 
-    openProjectDash = () => {
+    toggleProjectDash = () => {
         this.setState({
-            modalState: true
+            modalState: !this.state.modalState
         })
+        console.log(this.state.modalState)
+        console.log(this.props)
     }
 
-    closeProjectDash = () => {
-        this.setState({
-            modalState: false
-        })
-    }
-    
     render(){
-        const {modalState} = this.state
         return(
             <div class='dashboard'>
-                
+                <p onClick={this.toggleProjectDash}>Expand</p>
+                <div>
+                    <Modal modalState={this.state.modalState} info={this.props.info}/>
+                </div>
             </div>
         )
     }
