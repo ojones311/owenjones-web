@@ -13,7 +13,6 @@ class ProjectDashboard extends Component {
         this.setState({
             modalState: !this.state.modalState
         })
-        console.log(this.state.modalState)
         console.log(this.props)
     }
 

@@ -5,8 +5,6 @@ const Modal = (props) => {
     if(props.modalState){
         return(
             <div className ='project-modal'>
-                <h4>{props.info.name}</h4>
-                <p>{props.info.mission}</p>
                 <p>{props.info.description}</p>
             </div>
         )
