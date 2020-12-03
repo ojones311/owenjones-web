@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Route, Switch} from 'react-router-dom'
 import Navigation from './Components/Navigation.jsx'
 import Bio from './Components/Bio.jsx'
 import Projects from './Components/Projects.jsx'
@@ -9,9 +10,14 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-
+      project_name: ''
     }
   }
+  
+  renderProjectPage = (routeProps) => {
+    return <ProjectPage {...routeProps} project_name={this.state.project_name}/>
+  }
+
   render(){
     return(
       <div className='App'>
@@ -24,6 +30,9 @@ class App extends Component {
           <Projects />
           <ContactForm />
           <Navigation />
+          <Switch>
+            <Route path="/project/:project_name" render={this.renderProjectPage}/>
+          </Switch>
       </div>
     )
   }
