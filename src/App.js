@@ -30,13 +30,11 @@ class App extends Component {
           <Projects />
           <ContactForm />
           <Navigation />
-          <div>
-            <BrowserRouter>
-              <Switch>
-                <Route path="/project/:project_name" render={this.renderProjectPage}/>
-              </Switch>
-            </BrowserRouter>
-          </div>
+          {/* <BrowserRouter>
+            <Switch>
+              <Route path="/project/:project_name" render={this.renderProjectPage}/>
+            </Switch>
+          </BrowserRouter> */}
       </div>
     )
   }

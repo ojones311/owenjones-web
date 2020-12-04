@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 
 
-
 class ProjectPage extends Component {
     constructor(props){
         super(props)
@@ -12,11 +11,21 @@ class ProjectPage extends Component {
     render(){
         return(
             <div>
-
+                <h3>{this.props.project_name}Project Page</h3>
             </div>
         )
     }
 }
+
+// const ProjectPage = ({info}) => {
+//     let history = useHistory()
+
+//     const redirectToProjectPage = () => {
+//         if(info.name){
+//             history.push(`/projects/${info.name}`)
+//         }
+//     }
+// }
 
 
 

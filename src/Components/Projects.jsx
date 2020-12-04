@@ -51,7 +51,7 @@ class Projects extends Component {
                 <div className='project-map'>
                     {projectList.map(proj => {
                         return(
-                            <ProjectCard key={proj.id} id={proj.id} name={proj.name} description={proj.description} mission={proj.mission} github={proj.github} live={proj.live} renderDescription={this.renderDescription}/>
+                            <ProjectCard key={proj.id} id={proj.id} name={proj.name} description={proj.description} mission={proj.mission} github={proj.github} live={proj.live} />
                         )
                     })
                 } 
