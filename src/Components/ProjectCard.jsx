@@ -1,6 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import ProjectDashboard from '../Components/ProjectDashboard'
+import {useHistory, Link, withRouter} from 'react-router-dom'
+// import ProjectDashboard from '../Components/ProjectDashboard'
 import '../Styles/Projects.css'
 
 const ProjectCard = (props) => {
@@ -8,13 +8,15 @@ const ProjectCard = (props) => {
     let history = useHistory()
 
     const redirectToProjectPage = () => {
-        
+        if(props){
+            history.push(`/project/${name}`)
+        }
+        console.log(props)
     }
     return (
         <div id='card' >
             <h2 id='proj-title'>{name}</h2>
-            <ProjectDashboard info={props}/>
-            <Link to= "/project/choral">Hello</Link>
+            <p onClick={redirectToProjectPage}>More</p>
             <p id={'mission' + id}>{mission}</p>
                 <div id='link-buttons' key={id}>
                     <button id={name + '-githubbutton'} onClick={() =>  window.location.href = github}>Github</button>
@@ -24,4 +26,4 @@ const ProjectCard = (props) => {
         )
 }
 
-export default ProjectCard
+export default withRouter(ProjectCard)

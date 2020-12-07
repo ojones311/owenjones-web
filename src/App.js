@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
-import {Route, Switch, BrowserRouter} from 'react-router-dom'
+import {Route, Switch, BrowserRouter, withRouter} from 'react-router-dom'
+import ProjectPage from './Components/ProjectPage.jsx'
 import Navigation from './Components/Navigation.jsx'
 import Bio from './Components/Bio.jsx'
 import Projects from './Components/Projects.jsx'
-import ProjectPage from './Components/ProjectPage.jsx'
 import ContactForm from './Components/ContactForm.jsx'
+import UITest from './Components/UITest.jsx'
 import './App.css';
 
 class App extends Component {
@@ -15,27 +16,25 @@ class App extends Component {
     }
   }
 
-  renderProjectPage = (routeProps) => {
-    return <ProjectPage {...routeProps} project_name={this.state.project_name}/>
-  }
-
   render(){
     return(
-      <div className='App'>
-        <div className='tagline'>
-          <h1> Hi, I'm Owen Jones. </h1>
-        </div>
-          <Bio />
-          <div className='border-div'> </div>
-          <Projects />
-          <ContactForm />
-          <Navigation />
-          {/* <BrowserRouter>
-            <Switch>
-              <Route path="/project/:project_name" render={this.renderProjectPage}/>
-            </Switch>
-          </BrowserRouter> */}
-      </div>
+      <BrowserRouter>
+          <div className='App'>
+            <div className='tagline'>
+              <h1> Hi, I'm Owen Jones. </h1>
+            </div>
+            <div>
+              <div class='interface'>
+                <div className='border-div'> </div>
+                  <Switch>
+                    <Route exact path="/" render={()=> <UITest />} />
+                    {/* <Route path="/projects" render={()=> <Projects />} /> */}
+                    <Route path="/project/:name" render={()=>  <ProjectPage name={this.state.project_name}/>} />
+                  </Switch>
+              </div>
+              </div>
+          </div>
+       </BrowserRouter>
     )
   }
 }
