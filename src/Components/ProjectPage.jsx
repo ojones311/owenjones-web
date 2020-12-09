@@ -1,23 +1,17 @@
-import React, {Component} from 'react'
+import React, {useState} from 'react'
+import ProjectCard from '../Components/ProjectCard'
 import {withRouter} from 'react-router-dom'
 
-class ProjectPage extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            project_name : ''
-        }
-    }
-    render(){
-        console.log('Proj page rendered',)
-        return(
-            <div>
-                <h3>{this.state.project_name}Project Page</h3>
-            </div>
-        )
-    }
+const ProjectPage = (props) => {
+    const [projectName, setProjectName] = useState('Choral')
+    console.log(props)
+    return(
+        <div>
+            <h3>{projectName} Project Page</h3>
+            <ProjectCard  />
+        </div>
+    )
 }
-
 
 
 export default withRouter(ProjectPage)
