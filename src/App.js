@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
-import {Route, Switch, BrowserRouter, withRouter} from 'react-router-dom'
+import {Route, Switch, useHistory} from 'react-router-dom'
 import ProjectPage from './Components/ProjectPage.jsx'
 import UITest from './Components/UITest.jsx'
+import Heading from './Components/Heading.jsx'
 import './App.css';
 
 class App extends Component {
@@ -12,11 +13,12 @@ class App extends Component {
     }
   }
   
+  
   render(){
     return(
         <div className='App'>
           <div className='tagline'>
-            <h1> Hi, I'm Owen Jones. </h1>
+            <h1 onClick={this.backToHomePage}> Hi, I'm Owen Jones. </h1>
           </div>
           <div>
             <div class='interface'>

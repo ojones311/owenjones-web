@@ -31,12 +31,11 @@ class ImgCarousel extends Component {
         this.setState({
             slides: images
         })
-        console.log(images)
     }
    
     render(){
         return(
-            <div>
+            <div className='image-carousel'>
                 <Carousel
                     value={this.state.value}
                     slides={this.state.slides}
