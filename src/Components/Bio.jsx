@@ -16,7 +16,7 @@ const Bio = () => {
                         I'm a Brooklyn based full stack web developer. When I'm not building web apps I love to snowboard, play soccer, solve puzzles, and cook. 
                     </p>
                     <p id='bio'> 
-                        I'm building user-friendly experiences and exploring different technologies along the way. Different frameworks and libraries like React, Node, and PostgreSQL. 
+                        I'm building user-friendly experiences and exploring different technologies along the way. I use different frameworks and libraries, including React, Node, and PostgreSQL. 
                     </p>
                     <div className='resume'>
                         <a target= 'blank' href='https://docs.google.com/document/d/1Dm0UPHdxjRFAPbNWVOdtsnjxpHXK58VigH6fRZtaQoU/edit#heading=h.85r1lcob89ni'> Click to go to my Resume</a>

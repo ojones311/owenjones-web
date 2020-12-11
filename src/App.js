@@ -1,10 +1,6 @@
 import React,{Component} from 'react';
-import {Route, Switch, BrowserRouter, Link} from 'react-router-dom'
+import {Route, Switch, BrowserRouter, withRouter} from 'react-router-dom'
 import ProjectPage from './Components/ProjectPage.jsx'
-import Navigation from './Components/Navigation.jsx'
-import Bio from './Components/Bio.jsx'
-import Projects from './Components/Projects.jsx'
-import ContactForm from './Components/ContactForm.jsx'
 import UITest from './Components/UITest.jsx'
 import './App.css';
 
@@ -24,8 +20,7 @@ class App extends Component {
           </div>
           <div>
             <div class='interface'>
-              {/* <div className='border-div'> </div> */}
-              <UITest />
+              <div className='border-div'> </div>
                 <Switch>
                   <Route exact path="/"><UITest/></Route>
                   <Route path="/project/:name"><ProjectPage /></Route>
