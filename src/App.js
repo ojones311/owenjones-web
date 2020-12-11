@@ -18,7 +18,7 @@ class App extends Component {
     return(
         <div className='App'>
           <div className='tagline'>
-            <h1 onClick={this.backToHomePage}> Hi, I'm Owen Jones. </h1>
+            <Heading />
           </div>
           <div>
             <div class='interface'>
