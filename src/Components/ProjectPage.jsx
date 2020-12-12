@@ -9,15 +9,17 @@ const ProjectPage = (props) => {
     const proj = projectList.find(elem => {
         return elem.name === props.match.params.name
     })
-    console.log(props)
+    console.log(proj)
     return(
         <div>
             <div className='projectpage-info'>
                 <h3>{proj.name} Project Page</h3>
+                <button onClick={()=> window.location.href = proj.github }>Github</button>
+                <button onClick={() => window.location.href = proj.live}>Live</button>
                 <p>{proj.mission}</p>
                 <p>{proj.description}</p>
             </div>
-            <ImgCarousel project={proj}/>
+            <ImgCarousel project={proj} />
         </div>
     )
 }

@@ -26,3 +26,18 @@ button:hover {
 p {
   font-size: 14px;
 }
+
+.heading1 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.heading2 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.heading2:hover {
+  color:#551a8b;
+  text-decoration: underline;
+}

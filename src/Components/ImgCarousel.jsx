@@ -10,6 +10,7 @@ class ImgCarousel extends Component {
             value: 0,
             slides: []
         }
+        this.onChange = this.onChange.bind(this)
     }
 
 
