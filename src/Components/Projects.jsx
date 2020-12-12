@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ProjectCard from  './ProjectCard.jsx'
 import projectList from '../projects'
 import '../Styles/Projects.css'
 
 
 const Projects = () => {
-    
     return(
         <div className='container'>
             <h1 id='proj-title'>Recent Projects</h1>      

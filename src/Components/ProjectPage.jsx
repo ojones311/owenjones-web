@@ -1,4 +1,4 @@
-import React, {useState, useParams} from 'react'
+import React from 'react'
 import ImgCarousel from '../Components/ImgCarousel'
 import '../Styles/ProjectPage.css'
 import projectList from '../projects'

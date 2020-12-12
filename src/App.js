@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Route, Switch, useHistory} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import ProjectPage from './Components/ProjectPage.jsx'
 import UITest from './Components/UITest.jsx'
 import Heading from './Components/Heading.jsx'
@@ -21,7 +21,7 @@ class App extends Component {
             <Heading />
           </div>
           <div>
-            <div class='interface'>
+            <div className='interface'>
               <div className='border-div'> </div>
                 <Switch>
                   <Route exact path="/"><UITest/></Route>

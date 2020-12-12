@@ -27,7 +27,7 @@ class ImgCarousel extends Component {
     displayProjectImages = () => {
         let images = []
         this.props.project.images.forEach(elem => {
-            images.push(<img src={elem}></img>)
+            images.push(<img src={elem} alt={elem.name}></img>)
         })
         this.setState({
             slides: images

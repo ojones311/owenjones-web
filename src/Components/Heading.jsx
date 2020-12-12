@@ -8,7 +8,7 @@ const Heading = () => {
     const location = useLocation()
     const props = useSpring({opacity: 1, from: {opacity: 0}})
 
-    if(location.pathname == '/'){
+    if(location.pathname === '/'){
         return(
             <animated.div style={props}>
                 <div className='heading1'>

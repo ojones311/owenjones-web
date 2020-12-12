@@ -7,7 +7,7 @@ import ContactForm from '../Components/ContactForm.jsx'
 
 const UITest = () => {
     return(
-        <div class='interface'>
+        <div className='interface'>
             <Bio />
             <div className='border-div'> </div>
             <Projects />

@@ -1,5 +1,5 @@
 import React from 'react'
-import {useHistory, Link, withRouter} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import '../Styles/Projects.css'
 
 const ProjectCard = (props) => {
