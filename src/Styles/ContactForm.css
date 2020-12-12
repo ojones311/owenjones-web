@@ -1,8 +1,6 @@
 .contact-form {
-    text-align:center;
     background-color:#F3F3F4;
     margin: 0 auto;
-    padding: 5px;
     width: 50%;
     border: 1px rgb(135, 209, 203) solid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -14,10 +12,7 @@
 }
 
 form {
-    display: grid;
     padding: 10px;
-    margin: 0 auto;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #form-email {
@@ -40,8 +35,22 @@ form {
     grid-row: 2/3;
 }
 
+.form-msg {
+    text-align: center;
+}
 #submit {
     margin: 0 auto;
     width: 8em;
     height: 3em;
+}
+
+#email-label, #message-label {
+    text-align: left;
+    margin: 5px auto;
+    width: 80%;
+}
+
+#contact-title{
+    text-align: center;
+    margin-block: 10px;
 }
