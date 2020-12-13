@@ -1,7 +1,7 @@
 .contact-form {
     background-color:#F3F3F4;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 50%;
     border: 1px rgb(135, 209, 203) solid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -14,6 +14,7 @@
 
 form {
     padding: 10px;
+    text-align: left;
 }
 
 #form-email {

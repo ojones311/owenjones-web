@@ -11,6 +11,7 @@ const UITest = () => {
             <Bio />
             <div className='border-div'> </div>
             <Projects />
+            <div className='border-div'> </div>
             <ContactForm />
             <Navigation />
         </div>
