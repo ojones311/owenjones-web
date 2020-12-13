@@ -3,16 +3,19 @@ import {Link, withRouter} from 'react-router-dom'
 import '../Styles/Projects.css'
 
 const ProjectCard = (props) => {
-    const {id, name, mission, github, live} = props
+    const {id, name, mission, github, live, images} = props
     return (
         <div id='card' >
             <h2 id='proj-title'>{name}</h2>
             <Link to={`/project/${name}`}>More</Link>
             <p id={'mission' + id}>{mission}</p>
-                <div id='link-buttons' key={id}>
-                    <button id={name + '-githubbutton'} onClick={() => window.location.href = github}>Github</button>
-                    <button id={name + '-livebutton'} onClick={() => window.location.href = live}>Live</button>
-                </div>
+            <div className='card-image'>
+                <img id='screenshot' src={images[0]}></img>
+            </div>
+            <div id='link-buttons' key={id}>
+                <button id={name + '-githubbutton'} onClick={() => window.location.href = github}>Github</button>
+                <button id={name + '-livebutton'} onClick={() => window.location.href = live}>Live</button>
+            </div>
         </div>
         )
 }

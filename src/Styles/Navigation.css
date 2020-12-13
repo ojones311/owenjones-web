@@ -1,6 +1,6 @@
 .social-buttons {
     margin: 0 auto; 
-    margin-top: 15px;
+    margin-top: 25px;
     width: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
