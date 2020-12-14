@@ -7,7 +7,7 @@ import '../Styles/Projects.css'
 const Projects = () => {
     return(
         <div className='container'>
-            <h1 id='proj-title'>Recent Projects</h1>      
+            <h2 id='proj-header'>Recent Projects</h2>      
             <div className='project-map'>
                 {projectList.map(proj => {
                     return(

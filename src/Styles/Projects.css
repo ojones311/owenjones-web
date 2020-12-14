@@ -1,6 +1,7 @@
 .container {
     margin: 0 auto;
     width: 80%;
+    margin-bottom: 6px;
 }
 
 #proj-title {
@@ -8,6 +9,10 @@
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1.5px;
+}
+
+#proj-header {
+    text-align: center;
 }
 
 .project-map{
@@ -27,6 +32,8 @@
     border-radius: 5%;
     transition: 0.3s;
     width: 80%;
+    display: grid;
+    grid-template-rows: .5fr 2fr 1fr .5fr;
 }
 #card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -54,8 +61,15 @@
 }
 
 @media only screen and (max-width:800px ){
+    .container{
+        width: 100%
+    }
+    
     .project-map {
         grid-template-columns: 1fr ;
-        width: 100%;
+    }
+
+    .card-image, #card {
+        width: 90%
     }
 }

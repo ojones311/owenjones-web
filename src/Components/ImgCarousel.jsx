@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import Carousel, {Dots, autoplayPlugin} from '@brainhubeu/react-carousel';
+import Carousel, {autoplayPlugin} from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import '../Styles/ProjectPage.css'
 
@@ -27,26 +27,33 @@ class ImgCarousel extends Component {
     displayProjectImages = () => {
         let images = []
         this.props.project.images.forEach(elem => {
-            images.push(<img id='carousel-img' src={elem} alt={elem.name}></img>)
+            images.push(<img id='carousel-img' src={elem} alt={elem.name} />)
         })
-        this.setState({
-            slides: images
-        })
+        return images
     }
    
     render(){
         return(
             <div className='image-carousel'>
                 <Carousel
-                    value={this.state.value}
-                    slides={this.state.slides}
-                    onChange={this.onChange}
-                    animationSpeed={1500}
-                />
-                <Dots value={this.state.value}
+                    // value={this.state.value}
+                    // slides={this.state.slides}
+                    // onChange={this.onChange}
+                    animationSpeed={500}
+                    plugins={[
+                        'infinite'
+                    //    {
+                    //      resolve: autoplayPlugin,
+                    //      options: {
+                    //        interval: 500,
+                    //      }
+                    //    },
+                     ]}   
+                    >{this.displayProjectImages()}</Carousel>
+                {/* <Dots value={this.state.value}
                  onChange={this.onChange} 
                  number={this.state.slides.length}
-                 />
+                 /> */}
             </div>
         )
     }

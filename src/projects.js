@@ -23,7 +23,7 @@ let projects = [{
     mission: 'MemeMe is a social media site where users can post their favorite memes. Users can add friends and see the memes their friends post as well.',
     github: 'https://github.com/ojones311/MemeMe',
     live:'https://meme-me-ny.herokuapp.com/',
-    images: ['../pics/meme-me-login.png','../pics/meme-me-profile.png','../pics/meme-me-feed.png','../pics/meme-me-post.png']
+    images: ['../pics/meme-me-profile.png','../pics/meme-me-login.png','../pics/meme-me-feed.png','../pics/meme-me-post.png']
 },
 {   
     id: 3,

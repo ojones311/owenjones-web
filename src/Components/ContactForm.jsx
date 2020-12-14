@@ -44,8 +44,9 @@ class ContactForm extends Component {
 
     render(){
         return(
+        <>
+         <h2 id='contact-title'>Contact Me</h2> 
             <div className='contact-form'>
-                <h3 id='contact-title'>Contact Me</h3>
                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" onSubmit={this.handleSubmit}>
                     <fieldset id="fs-frm-inputs">
                         <label for="full-name">Full Name</label>
@@ -62,6 +63,7 @@ class ContactForm extends Component {
                         )}
                 </form>
             </div>
+            </>
         )
     }
 }

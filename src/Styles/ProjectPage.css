@@ -3,6 +3,13 @@
     margin: 0 auto;
 }
 
+h3 {
+    color: #690;
+}
+
+p {
+    color: #905;
+}
 
 @media only screen and (max-width: 800px) {
     #carousel-img {
