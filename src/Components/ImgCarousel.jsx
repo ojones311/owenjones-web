@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import Carousel, {autoplayPlugin} from '@brainhubeu/react-carousel';
+import Carousel, {Dots, autoplayPlugin} from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import '../Styles/ProjectPage.css'
 
@@ -27,33 +27,35 @@ class ImgCarousel extends Component {
     displayProjectImages = () => {
         let images = []
         this.props.project.images.forEach(elem => {
-            images.push(<img id='carousel-img' src={elem} alt={elem.name} />)
+            images.push(<img id='carousel-img' src={elem} alt={elem.name}></img>)
         })
-        return images
+        this.setState({
+            slides: images
+        })
     }
    
     render(){
         return(
             <div className='image-carousel'>
                 <Carousel
-                    // value={this.state.value}
-                    // slides={this.state.slides}
-                    // onChange={this.onChange}
-                    animationSpeed={500}
+                    value={this.state.value}
+                    slides={this.state.slides}
+                    onChange={this.onChange}
+                    animationSpeed={1500}
                     plugins={[
-                        'infinite'
-                    //    {
-                    //      resolve: autoplayPlugin,
-                    //      options: {
-                    //        interval: 500,
-                    //      }
-                    //    },
+                        'infinite',
+                       {
+                         resolve: autoplayPlugin,
+                         options: {
+                           interval: 2000,
+                         }
+                       },
                      ]}   
-                    >{this.displayProjectImages()}</Carousel>
-                {/* <Dots value={this.state.value}
+                />
+                <Dots value={this.state.value}
                  onChange={this.onChange} 
                  number={this.state.slides.length}
-                 /> */}
+                 />
             </div>
         )
     }
