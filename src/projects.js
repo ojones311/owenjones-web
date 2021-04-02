@@ -2,11 +2,11 @@ let projects = [
 {
     id: 0,
     name: 'JOVA',
-    description: 'A Full Stack Web Application built with React, Nextjs and Tailwind. React-Simple MAps is used for the map display of the US. We use the Pro-Publica Congress API to get the political data and Twitter widgets for the Twitter feed.',
-    mission: 'JOVA is a user interface for users to get information on their respective congresspeople and to learn more about them and their voting positions. We strive to reacquaint users with their representatives',
+    description: 'A Full Stack Web Application built with React, Nextjs and Tailwind. React-Simple-Maps is used for the map display of the US. We use the Pro-Publica Congress API to get the political data and Twitter widgets for the Twitter feed.',
+    mission: 'JOVA is a user interface for users to get information on their respective congresspeople and to learn more about them and their voting positions. We strive to refamiliarize users with their representatives',
     github:'https://github.com/jenesh/jova',
     live:'https://jova.vercel.app/',
-    images: []
+    images: ['../pics/jovacountrymap.png','../pics/jovastatecongressppl.png','../pics/jovacongressinfopage.png','../pics/jovavotingpositions.png','../jovastatereps.png']
 },
 {
     id: 1,
@@ -33,7 +33,7 @@ let projects = [
     mission:'The Bored App aims to give people something to do when they are bored. Inspired from pandemic life.',
     github: 'https://github.com/ojones311/boredapp',
     live: 'https://boredportal.netlify.app/',
-    images: []
+    images: ['../pics/boredportalAL.png', '../pics/boredportalresults.png']
 },
 {
     id: 4,
