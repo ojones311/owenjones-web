@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
             <div id='link-buttons' key={id}>
                 <button id={name + '-githubbutton'} onClick={() => window.location.href = github}>Github</button>
                 {live ?
-                    <button id={name + '-livebutton'} onClick={() => window.location.href = live}>Live</button> : null
+                <button id={name + '-livebutton'} onClick={() => window.location.href = live}>Live</button> : null
                 }
                 <Link to={`/project/${name}`}><button id={name + '-morebutton'}>More</button></Link>
             </div>
