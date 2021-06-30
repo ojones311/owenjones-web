@@ -6,7 +6,7 @@ let projects = [
     mission: 'JOVA is a user interface for users to get information on their respective congresspeople and to learn more about them and their voting positions. We strive to refamiliarize users with their representatives',
     github:'https://github.com/jenesh/jova',
     live:'https://jova.vercel.app/',
-    images: ['../pics/jovacountrymap.png','../pics/jovastatecongressppl.png','../pics/jovacongressinfopage.png','../pics/jovavotingpositions.png','../jovastatereps.png']
+    images: ['../pics/jovacountrymap.png','../pics/jovastatecongressppl.png','../pics/jovacongressinfopage.png','../pics/jovavotingpositions.png','../pics/jovastatereps.png']
 },
 {
     id: 1,
@@ -52,6 +52,15 @@ let projects = [
     github: 'https://github.com/ojones311/Pursuit-Core-Web-Twitter-CSS-Assignment',
     live:'',
     images: ['../pics/twitterclone.png']
+},
+{
+    id: 6,
+    name: 'Stock Visulaizer',
+    description: 'A Full Stack Web Application built with React, Express and PostgreSQL. Uses the IEX API to get real time data from the stock market. Uses Chartjs for the stock chart.',
+    mission:'The Stock Visualizer gives the user real time data about the stock prices and extra company info to predict price changes.',
+    github: 'https://github.com/ojones311/stockmarketapp',
+    live: '',
+    images:[]
 },
 ]
 
