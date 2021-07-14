@@ -55,7 +55,7 @@ let projects = [
 },
 {
     id: 6,
-    name: 'Stock Visulaizer',
+    name: 'Stock Visualizer',
     description: 'A Full Stack Web Application built with React, Express and PostgreSQL. Uses the IEX API to get real time data from the stock market. Uses Chartjs for the stock chart.',
     mission:'The Stock Visualizer gives the user real time data about the stock prices and extra company info to predict price changes.',
     github: 'https://github.com/ojones311/stockmarketapp',
